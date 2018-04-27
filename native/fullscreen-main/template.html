@@ -25,10 +25,10 @@
 
       <footer>
         <div class='button-center'>
-          <a id="toast-test" href="#" onclick="showAndroidToast('Show toast test!')">Show toast</a>
+          <a id="toast-test" href="#" onclick="showAndroidToast()">Show toast</a>
           <script type="text/javascript">
-            function showAndroidToast(toast) {
-              Android.showToast(toast);
+            function showAndroidToast() {
+              Android.showToast(Android.getLiid());
             }
           </script>
         </div>
