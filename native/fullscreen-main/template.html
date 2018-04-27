@@ -25,7 +25,12 @@
 
       <footer>
         <div class='button-center'>
-          <a href='appboy://close'><p>Close</p></a>
+          <a id="toast-test" href="#" onclick="showAndroidToast('Show toast test!')">Show toast</a>
+          <script type="text/javascript">
+            function showAndroidToast(toast) {
+              Android.showToast(toast);
+            }
+          </script>
         </div>
       </footer>
     </div>
